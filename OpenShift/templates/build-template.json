@@ -822,13 +822,6 @@
       "required": true,
       "value": "mock"
     },
-    {
-      "name": "SCHEMASPY_NAME",
-      "displayName": "Schema Spy Name",
-      "description": "The name assigned to all of the schema spy objects defined in this template.",
-      "required": true,
-      "value": "schema-spy"
-    },
 	{
       "name": "SONAR_DATABASE_USER",
       "displayName": "DB Username",

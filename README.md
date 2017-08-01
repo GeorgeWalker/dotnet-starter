@@ -21,6 +21,13 @@ What you get
 	- A service that points to the application
 	- A route that exposes the service
 
+Required Edits
+--------------
+The following edits to the starter will be necessary before you can fully run the pipeline:
+
+1. functional-tests/src/test/resources/GebConfig.groovy - change the baseURL to the actual base URL.
+2. Server/Sonar.bat - edit with actual values for Sonar URL, project key, project name
+
 Development
 -----------
 This project uses .NET Core version 2, which is currently in Preview (3).  The type of application is a Model View Controller (MVC) web application.  Static files are supported as the MVC code.  An example REST interface to a test service is provided.

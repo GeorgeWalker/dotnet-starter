@@ -15,7 +15,7 @@ set MSBuildSDKsPath=C:\Program Files\dotnet\sdk\2.0.0-preview2-006497\Sdks
 for /f %%i in ('git rev-parse HEAD') do set COMMIT=%%i
 
 rem dotnet restore project.sonar.json
-SonarQube.Scanner.MSBuild.exe /d:sonar.host.url=http://sonarqube-agri-nmp-tools.pathfinder.gov.bc.ca /n:"Nutrient Management Project" /v:%COMMIT%  /d:sonar.login=<TOKEN> begin /k:"agri-nmp"
+SonarQube.Scanner.MSBuild.exe /d:sonar.host.url=<Sonar URL> /n:"<Project Name>" /v:%COMMIT%  /d:sonar.login=<TOKEN> begin /k:"<Project Key>"
 "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBuild" /t:Rebuild 
 
 SonarQube.Scanner.MSBuild.exe end
